@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الفحص الفني الدوري</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Tahoma,sans-serif;
+    }
+
+    body{
+      height:100vh;
+      overflow:hidden;
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+    }
+
+    /* الخلفية */
+    body::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:url("bg.jpg") center center no-repeat;
+      background-size:cover;
+      z-index:-2;
+    }
+
+    /* تغميق خفيف */
+    body::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.10);
+      z-index:-1;
+    }
+
+    .buttons{
+      width:100%;
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      width:100%;
+      max-width:340px;
+      text-align:center;
+      text-decoration:none;
+      background:#14b8ff;
+      color:white;
+      padding:18px;
+      border-radius:18px;
+      font-size:22px;
+      font-weight:bold;
+      box-shadow:0 0 20px rgba(0,183,255,.45);
+      transition:.3s;
+      backdrop-filter:blur(5px);
+    }
+
+    .btn:hover{
+      background:#0095d4;
+      transform:scale(1.03);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="buttons">
+
+    <a href="https://ضع-رابط-الحجز" class="btn">
+      حجز موعد
+    </a>
+
+    <a href="https://ضع-رابط-التعديل" class="btn">
+      تعديل موعد
+    </a>
+
+  </div>
+
+</body>
+</html>
